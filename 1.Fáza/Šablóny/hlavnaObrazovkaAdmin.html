@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">    
+        <!-- Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+
+        <link rel="stylesheet" href="hlavnaObrazovka.css">  
+        
+        <title>Document</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md bg-body-tertiary">
+            <div class="container-fluid">
+                <div class="container justify-content-center">
+                    <div class="row">
+                        <div class="col-2">
+                            <a class="navbar-brand" href="#">LogoImg</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                        <div class="col-xs-0 col-sm-0 col-8">
+                            <form class="d-flex .d-none" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                        </div>
+                        <div class="col-2">
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <i class="zmdi zmdi-shopping-cart-plus fs-2"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link disabled">
+                                            <i class="zmdi zmdi-plus-circle-o fs-2"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link disabled">
+                                            <i class="zmdi zmdi-account-circle fs-2"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row mt-3 mb-4">
+                <div class="col d-flex justify-content-center">
+                    <button class="btnFilter " type="button">Odporúčané</button>
+                    <button class="btnFilter " type="button">Najpredávanejšie</button>
+                    <button class="btnFilter " type="button">Najlacnejšie</button>
+                    <button class="btnFilter" type="button">Najdrahšie</button>
+                </div>
+            </div>
+        </div>
+  
+        <div class="container-fluid">
+            <div class="row">
+                <div class="card col-xs-12 col-sm-12 col-md-4 col-lg-2 col-xl-2 col-xxl-2 border-0">
+                    <div class="card-header">
+                      Filter
+                    </div>
+                    <div class="card-body">
+                      <form>
+                        <div class="form-group">
+                          <label for="category">Category</label>
+                          <select class="form-control" id="category">
+                            <option>All Categories</option>
+                            <option>Category 1</option>
+                            <option>Category 2</option>
+                            <option>Category 3</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="price-range">Price Range</label>
+                          <input type="range" class="form-control-range" id="price-range">
+                        </div>
+                        <div class="form-group">
+                          <label for="color">Color</label>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="color1">
+                            <label class="form-check-label" for="color1">
+                              Red
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="color2">
+                            <label class="form-check-label" for="color2">
+                              Green
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="color3">
+                            <label class="form-check-label" for="color3">
+                              Blue
+                            </label>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <button type="submit" class="btn btn-primary">Apply</button>
+                        </div>
+                      </form>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-10 col-xl-10 col-xxl-10 py-3">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                            <div class="card text-center">
+                                <div id="hero-carousel" class="carousel slide">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active cItem">
+                                            <img src="assets/hoodie.jpg" class="d-block w-100 cImg" alt="...">
+                                        </div>
+                                        <div class="carousel-item cItem">
+                                            <img src="assets/dress.jpg" class="d-block w-100 cImg" alt="...">
+                                        </div>
+                                        <div class="carousel-item cItem">
+                                            <img src="assets/boots.png" class="d-block w-100 cImg" alt="...">
+                                       </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Upraviť</a>
+                                    <a href="#" class="btn btn-primary">Zmazať</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                            <div class="card text-center">
+                                <div id="hero-carousel" class="carousel slide">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active cItem">
+                                            <img src="assets/hoodie.jpg" class="d-block w-100 cImg" alt="...">
+                                        </div>
+                                        <div class="carousel-item cItem">
+                                            <img src="assets/dress.jpg" class="d-block w-100 cImg" alt="...">
+                                        </div>
+                                        <div class="carousel-item cItem">
+                                            <img src="assets/boots.png" class="d-block w-100 cImg" alt="...">
+                                       </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Upraviť</a>
+                                    <a href="#" class="btn btn-primary">Zmazať</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                            <div class="card text-center">
+                                <div id="hero-carousel" class="carousel slide">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active cItem">
+                                            <img src="assets/hoodie.jpg" class="d-block w-100 cImg" alt="...">
+                                        </div>
+                                        <div class="carousel-item cItem">
+                                            <img src="assets/dress.jpg" class="d-block w-100 cImg" alt="...">
+                                        </div>
+                                        <div class="carousel-item cItem">
+                                            <img src="assets/boots.png" class="d-block w-100 cImg" alt="...">
+                                       </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Upraviť</a>
+                                    <a href="#" class="btn btn-primary">Zmazať</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                            <div class="card text-center">
+                                <div id="hero-carousel" class="carousel slide">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active cItem">
+                                            <img src="assets/hoodie.jpg" class="d-block w-100 cImg" alt="...">
+                                        </div>
+                                        <div class="carousel-item cItem">
+                                            <img src="assets/dress.jpg" class="d-block w-100 cImg" alt="...">
+                                        </div>
+                                        <div class="carousel-item cItem">
+                                            <img src="assets/boots.png" class="d-block w-100 cImg" alt="...">
+                                       </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Upraviť</a>
+                                    <a href="#" class="btn btn-primary">Zmazať</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                            <div class="card text-center">
+                                <div id="hero-carousel" class="carousel slide">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active cItem">
+                                            <img src="assets/hoodie.jpg" class="d-block w-100 cImg" alt="...">
+                                        </div>
+                                        <div class="carousel-item cItem">
+                                            <img src="assets/dress.jpg" class="d-block w-100 cImg" alt="...">
+                                        </div>
+                                        <div class="carousel-item cItem">
+                                            <img src="assets/boots.png" class="d-block w-100 cImg" alt="...">
+                                       </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Upraviť</a>
+                                    <a href="#" class="btn btn-primary">Zmazať</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                            <div class="card text-center">
+                                <div id="hero-carousel" class="carousel slide">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active cItem">
+                                            <img src="assets/hoodie.jpg" class="d-block w-100 cImg" alt="...">
+                                        </div>
+                                        <div class="carousel-item cItem">
+                                            <img src="assets/dress.jpg" class="d-block w-100 cImg" alt="...">
+                                        </div>
+                                        <div class="carousel-item cItem">
+                                            <img src="assets/boots.png" class="d-block w-100 cImg" alt="...">
+                                       </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Upraviť</a>
+                                    <a href="#" class="btn btn-primary">Zmazať</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                            <div class="card text-center">
+                                <div id="hero-carousel" class="carousel slide">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active cItem">
+                                            <img src="assets/hoodie.jpg" class="d-block w-100 cImg" alt="...">
+                                        </div>
+                                        <div class="carousel-item cItem">
+                                            <img src="assets/dress.jpg" class="d-block w-100 cImg" alt="...">
+                                        </div>
+                                        <div class="carousel-item cItem">
+                                            <img src="assets/boots.png" class="d-block w-100 cImg" alt="...">
+                                       </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Upraviť</a>
+                                    <a href="#" class="btn btn-primary">Zmazať</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                            <div class="card text-center">
+                                <div id="hero-carousel" class="carousel slide">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active cItem">
+                                            <img src="assets/hoodie.jpg" class="d-block w-100 cImg" alt="...">
+                                        </div>
+                                        <div class="carousel-item cItem">
+                                            <img src="assets/dress.jpg" class="d-block w-100 cImg" alt="...">
+                                        </div>
+                                        <div class="carousel-item cItem">
+                                            <img src="assets/boots.png" class="d-block w-100 cImg" alt="...">
+                                       </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Upraviť</a>
+                                    <a href="#" class="btn btn-primary">Zmazať</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

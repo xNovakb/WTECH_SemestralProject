@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*
+.navbar-brand {
+    font-size: 2rem;
+    color: black;
+}
+
+.navbar-brand:hover {
+    color: black;
+}
+
+
+
+.searchInput{
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border-radius: 60px;
+}
+
+.home .home-banner-1,
+.home .home-banner-2{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 90% center;
+    min-height: 650px;
+    position: relative;
+}
+
+.home .home-banner-1{
+    background-image: url("assets/woman.jpg");
+}
+
+.home .home-banner-2{
+    background-image: url("assets/man.jpg");
+}
+*/
+.cItem{
+    height: 280px;
+}
+
+.cImg{
+    height: 100%;
+}
+
+.btnFilter{
+    background-color: #fff;
+    border-width: 0;    
+}
+
+.btnFilter:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px #019fb6;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+  }
+
+ .btnFilter:hover:after { transform: scaleX(1); }
+
+ .nav-link {
+    margin-right: 10px;
+    margin-left: 10px;
+    color: black; 
+}
+
+.nav-link:hover{
+    color: black;
+}
