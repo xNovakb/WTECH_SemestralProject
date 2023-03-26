@@ -14,26 +14,16 @@
         <title>Edit produktu</title>
     </head>
     <body>
-      <header>
-        <nav class="navbar py-3">
-          <div class="container-fluid justify-content-end">
-            <button class="btn">
-              <i class="zmdi zmdi-power fs-1"></i>
-            </button>
-          </div>
-        </nav>
-      </header>
-
-      <div class="container">
+      <div class="container py-5">
         <form>
           <div class="form-group row py-1">
-            <label for="nazovProduktu" class="col-xs-4 col-sm-4 col-md-3 col-lg-2 col-xl-2 col-xxl-2 col-form-label">Názov produktu</label>
+            <label for="product" class="col-xs-4 col-sm-4 col-md-3 col-lg-2 col-xl-2 col-xxl-2 col-form-label">Názov produktu</label>
             <div class="col-xs-8 col-sm-8 col-md-5 col-lg-6 col-xl-6 col-xxl-6">
-              <input type="text" class="form-control p-sm-1" id="nazovProduktu" placeholder="Zadajte názov produktu">
+              <input type="text" class="form-control p-sm-1" id="product" placeholder="Zadajte názov produktu">
             </div>
-            <label for="velkost" class="col-xs-4 col-sm-4 col-md-1 col-lg-1 col-xl-1 col-xxl-1 col-form-label">Veľkosť</label>
+            <label for="size" class="col-xs-4 col-sm-4 col-md-1 col-lg-1 col-xl-1 col-xxl-1 col-form-label">Veľkosť</label>
             <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                <select class="form-control p-sm-1" id="velkost">
+                <select class="form-control p-sm-1" id="size">
                   <option>XS</option>
                   <option>S</option>
                   <option>M</option>
@@ -44,13 +34,13 @@
             </div>
           </div>
           <div class="form-group row py-1">
-            <label for="znacka" class="col-xs-4 col-sm-4 col-md-3 col-lg-2 col-xl-2 col-xxl-2 col-form-label">Značka</label>
+            <label for="brand" class="col-xs-4 col-sm-4 col-md-3 col-lg-2 col-xl-2 col-xxl-2 col-form-label">Značka</label>
             <div class="col-xs-8 col-sm-8 col-md-5 col-lg-6 col-xl-6 col-xxl-6">
-              <input type="text" class="form-control p-sm-1" id="znacka" placeholder="Zadajte značku">
+              <input type="text" class="form-control p-sm-1" id="brand" placeholder="Zadajte značku">
             </div>
-            <label for="pohlavie" class="col-xs-4 col-sm-4 col-md-1 col-lg-1 col-xl-1 col-xxl-1 col-form-label">Pohlavie</label>
+            <label for="sex" class="col-xs-4 col-sm-4 col-md-1 col-lg-1 col-xl-1 col-xxl-1 col-form-label">Pohlavie</label>
             <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-              <select class="form-control p-sm-1" id="pohlavie">
+              <select class="form-control p-sm-1" id="sex">
                 <option>Ženy</option>
                 <option>Muži</option>
                 <option>Unisex</option>
@@ -68,15 +58,15 @@
             </div>
           </div>
           <div class="form-group row py-1">
-            <label for="kategoria" class="col-xs-4 col-sm-4 col-md-3 col-lg-2 col-xl-2 col-xxl-2 col-form-label">Kategória</label>
+            <label for="category" class="col-xs-4 col-sm-4 col-md-3 col-lg-2 col-xl-2 col-xxl-2 col-form-label">Kategória</label>
             <div class="col-xs-8 col-sm-8 col-md-9 col-lg-10 col-xl-10 col-xxl-10">
-              <input type="text" class="form-control" id="kategoria" placeholder="Zadajte kategóriu">
+              <input type="text" class="form-control" id="category" placeholder="Zadajte kategóriu">
             </div>
           </div>
           <div class="form-group row py-1">
-            <label for="popisProduktu" class="col-xs-4 col-sm-4 col-md-3 col-lg-2 col-xl-2 col-xxl-2 col-form-label">Popis produktu</label>
+            <label for="productInfo" class="col-xs-4 col-sm-4 col-md-3 col-lg-2 col-xl-2 col-xxl-2 col-form-label">Popis produktu</label>
             <div class="col-xs-8 col-sm-8 col-md-9 col-lg-10 col-xl-10 col-xxl-10">
-              <textarea class="form-control" id="popisProduktu" rows="5"></textarea>
+              <textarea class="form-control" id="productInfo" rows="5"></textarea>
             </div>
           </div>
         </form>
@@ -86,14 +76,13 @@
           <div class="col-12">
             <i class="zmdi zmdi-image-o fs-1"></i>
             <label for="obrazky" class="fs-2 px-2">Obrázky:</label>
+            <button class="btn btn-success px-3">+ Nový</button>
           </div>
-        </div>
+        </div>  
         <div class="row">
-          <div class="col-12">
-            <button class="btn btn-success">+ Nový</button>
-            <img class="img-fluid" src="assets/hoodie.jpg" alt="">
-            <img class="" src="assets/hoodie.jpg" alt="">
-            <img class="" src="assets/hoodie.jpg" alt="">
+          <div class="col-xs-12 col-sm-12 col-3 px-3 d-flex">
+            <i class="zmdi zmdi-delete fs-2 d-inline-block"></i>
+            <img class="px-3 d-inline-block" src="assets/hoodie.jpg" alt="">
           </div>
         </div>
       </div>       
