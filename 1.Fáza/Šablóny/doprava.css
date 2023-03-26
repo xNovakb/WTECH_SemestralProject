@@ -1,3 +1,7 @@
+body {
+    overflow: hidden;
+}
+
 img {
     height: 150px;
     width: 150px;
@@ -15,6 +19,7 @@ main {
     border-width: 1px;
     height: 70vh;
     border-radius: 15px;
+    background: white;
 }
 
 .cart-nav {
@@ -27,13 +32,17 @@ main {
     border-width: 4px;
 }
 
-form {
+.form-control {
+    max-width: 700px;
+}
+
+.bordered {
     border: solid;
     border-width: 1px;
 }
 
 @media(max-width:767px){
-    form {
+    .bordered {
         border: none;
     }
 }
